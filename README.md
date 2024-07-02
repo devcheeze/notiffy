@@ -2,12 +2,12 @@
 
 <br/>
 
-<img src="logo.png" width="520px" />
+<img src="logo.png" width="560px" />
 
 <br />
 <br />
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdevcheeze%2Fnotiffy&count_bg=%231679AB&title_bg=%23555555&icon=github.svg&icon_color=%23FFFFFF&title=Hits&edge_flat=false)](https://github.com/devcheeze/notiffy) [![Version](https://img.shields.io/npm/v/notiffy.svg?style=flat&label=Version)]() [![NPM Downloads](https://img.shields.io/npm/dt/notiffy.svg?style=flat&label=NPM Download)]() [![Last Commit](https://img.shields.io/github/last-commit/devcheeze/notiffy.svg?style=flat&label=Last Commit)]() [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat&label=License)]()
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdevcheeze%2Fnotiffy&count_bg=%231679AB&title_bg=%23555555&icon=github.svg&icon_color=%23FFFFFF&title=Hits&edge_flat=false)](https://github.com/devcheeze/notiffy) [![Version](https://img.shields.io/npm/v/notiffy.svg?style=flat&label=Version)]() [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat&label=License)]()
 [![NPM](https://nodei.co/npm/notiffy.png?compact=true)](https://nodei.co/npm/notiffy/)
 
 </div>
@@ -22,9 +22,9 @@ Modern design created using pure CSS makes it accessible for everyone to learn a
 <br />
 Customization is possible through provided properties and supports vanilla JavaScript as well as TypeScript.
 <br/>
-Supports all frameworks and platforms that use JavaScript, such as React, Vue.js, and JSP.
+Also Supports all frameworks and platforms that use JavaScript, such as React, Vue.js, and JSP.
 <br />
-Promises regular debugging and continuous updates.
+Promises regular debugging and continuous updates. (at least one month apart)
 <br />
 Below are the core features provided by default.
 <br />
@@ -41,7 +41,7 @@ Below are the core features provided by default.
 
 # ⚠️ Usage Cautions
 
-Global CSS may affect DIV, SVG and Path tags.
+Global CSS may affect "DIV", "SVG" and "Path" tag.
 <br />
 TypeScript is optional with minimal dependencies required for module building.
 <br />
@@ -107,7 +107,9 @@ const { Toast, Slip, Mole, Alert } = notiffy;
   <br />
 
 ```javascript
-Toast.warning({ text: 'hello toast.' });
+Toast.warning({
+  text: 'hello toast.',
+});
 ```
 
 <br />
@@ -127,17 +129,17 @@ Toast.warning({ text: 'hello toast.' });
   </head>
   <body>
     <div>
-      <button id="button">Click here</button>
+      <button onclick="onClickButton()">Click here</button>
     </div>
   </body>
   <script>
-    const { Toast } = notiffy; // global variables declaration
+    const { Toast } = notiffy; // global variable declaration
 
-    document.getElementById('button').addEventListener('click', function () {
+    const onClickButton = () => {
       Toast.warning({
         text: 'hello warning toast.',
       });
-    });
+    };
   </script>
 </html>
 ```
@@ -200,7 +202,7 @@ export default defineComponent({
 <br />
 <br />
 
-# 🔗 Reference & More Infomation
+# 🔗 More Infomation
 
 - [Click Here](https://devcheeze.github.io/notiffy/) for document and examples.
 - [Click Here](mailto:devcheeze@icloud.com) to send feedback to the creator by email.
