@@ -3,8 +3,8 @@ export type SortSetType = {
     icon: {
         standard: string;
         outlined: string;
-        shield: string;
         unadorned: string;
+        shield: string;
     };
 };
 export type SortType = 'warning' | 'error' | 'success' | 'info';
